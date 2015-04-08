@@ -16,9 +16,13 @@ local color_slave = beautiful.color_subjected
 local tile = require("layouts.tile")
 tile.color_dominant = color_dominant
 tile.color_subjected = color_subjected
+local max = require("layouts.max")
+max.color_dominant = color_dominant
+max.color_subjected = color_subjected
 
 return {
 	tile = tile,
+	max = max,
 	utils = utils
 }
 
